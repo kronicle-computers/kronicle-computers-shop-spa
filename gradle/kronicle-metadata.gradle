@@ -1,0 +1,19 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "tech.kronicle:metadata:$kronicleVersion"
+    }
+}
+
+import tech.kronicle.componentmetadata.services.ComponentMetadataValidator
+
+tasks.register("validateKronicleMetadata") {
+    doLast {
+        ComponentMetadataValidator.validate(file("kronicle.yaml"))
+    }
+}
+
+tasks.named("build") { dependsOn("validateKronicleMetadata") }

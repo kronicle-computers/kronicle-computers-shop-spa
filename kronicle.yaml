@@ -1,0 +1,20 @@
+# This file is read automatically by Kronicle https://kronicle.tech
+
+# The contents of this file is for Kronicle Computers, a fictitious online computer shop, used as an example by
+# [Kronicle](https://kronicle.tech)
+
+components:
+  # Example of the minimal YAML to add a component to Kronicle
+  - id: frontend-spa
+    name: Frontend SPA
+    type: spa
+    repo:
+      url: https://github.com/kronicle-computers/kronicle-computers-frontend-spa.git
+    description: |
+      The [Single Page App (SPA)](https://en.wikipedia.org/wiki/Single-page_application) for Kronicle Computer's
+      online shop
+    tags:
+      - frontend
+    teams:
+      - teamId: frontend
+    platform: kubernetes
