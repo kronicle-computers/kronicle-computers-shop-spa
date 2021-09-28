@@ -5,11 +5,11 @@
 
 components:
   # Example of the minimal YAML to add a component to Kronicle
-  - id: frontend-spa
-    name: Frontend SPA
+  - id: shop-spa
+    name: Shop SPA
     type: spa
     repo:
-      url: https://github.com/kronicle-computers/kronicle-computers-frontend-spa.git
+      url: https://github.com/kronicle-computers/kronicle-computers-shop-spa.git
     description: |
       The [Single Page App (SPA)](https://en.wikipedia.org/wiki/Single-page_application) for Kronicle Computer's
       online shop
