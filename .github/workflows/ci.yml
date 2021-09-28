@@ -43,8 +43,14 @@ jobs:
       - name: Run linter 👀
         run: npm run lint
 
+      - name: Build distribution 🏗
+        run: npm run build
+
       - name: Run tests 🧪
         run: npm run test
+
+      - name: Build Docker image 📦
+        run: npm run docker-build
 
   ci-kronicle-metadata:
     runs-on: ${{ matrix.os }}
@@ -58,13 +64,13 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@master
 
-      - name: Set up JDK 11
+      - name: Set up JDK 11 🏗
         uses: actions/setup-java@v2
         with:
           java-version: '11'
           distribution: 'adopt'
 
-      - name: Validate Gradle wrapper
+      - name: Validate Gradle wrapper 👀
         uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
 
       - name: Validate kronicle.yaml 👀
