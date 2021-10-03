@@ -1,10 +1,9 @@
 # This file is read automatically by Kronicle https://kronicle.tech
 
-# The contents of this file is for Kronicle Computers, a fictitious online computer shop, used as an example by
+# The contents of this file is for Kronicle Computers, a fictional online computer shop, used as an example by
 # [Kronicle](https://kronicle.tech)
 
 components:
-  # Example of the minimal YAML to add a component to Kronicle
   - id: shop-spa
     name: Shop SPA
     type: spa
