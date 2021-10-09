@@ -17,3 +17,7 @@ components:
     teams:
       - teamId: frontend
     platform: kubernetes
+    dependencies:
+      - targetComponentId: user-service
+      - targetComponentId: catalog-service
+      - targetComponentId: order-service
