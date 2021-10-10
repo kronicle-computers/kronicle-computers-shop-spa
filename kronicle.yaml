@@ -4,9 +4,10 @@
 # [Kronicle](https://kronicle.tech)
 
 components:
+
   - id: shop-spa
     name: Shop SPA
-    type: spa
+    typeId: spa
     repo:
       url: https://github.com/kronicle-computers/kronicle-computers-shop-spa.git
     description: |
