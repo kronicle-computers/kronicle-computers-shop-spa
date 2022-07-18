@@ -21,7 +21,7 @@
   "dependencies": {
     "bootstrap": "^5.1.1",
     "bootstrap-vue": "^2.21.2",
-    "core-js": "^3.15.1",
+    "core-js": "^3.23.5",
     "nuxt": "^2.15.7"
   },
   "devDependencies": {
